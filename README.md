@@ -1,2 +1,4 @@
-Proektic2
+studPaint
 =========
+
+Just simple studing project.
