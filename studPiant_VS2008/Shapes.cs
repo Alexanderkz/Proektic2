@@ -168,7 +168,7 @@ namespace studPiant_VS2008
 
         public override void SaveTo(StreamWriter sw) //Сохранение
         {
-            sw.WriteLine("Circle");
+            sw.WriteLine("");
             sw.WriteLine(Convert.ToString(C.X) + " " + Convert.ToString(C.Y));
             sw.WriteLine(Convert.ToString(onR.X) + " " + Convert.ToString(onR.Y));
         }

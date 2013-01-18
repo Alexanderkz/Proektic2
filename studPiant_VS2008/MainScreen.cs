@@ -43,7 +43,9 @@ namespace studPiant_VS2008
                         break;
                     case rdB_Positions.line:
                         if (!flagStart)
+
                         {
+                        
                             lineStart = e.Location;
                             flagStart = true;
                         }
@@ -104,6 +106,8 @@ namespace studPiant_VS2008
 
         private void rdButt_Cross_CheckedChanged(object sender, EventArgs e)
         {
+
+            flagStart = false;
             Figures = rdB_Positions.cross;
             tmpShape = null;
             Refresh();
@@ -111,6 +115,8 @@ namespace studPiant_VS2008
 
         private void rdButt_Lines_CheckedChanged(object sender, EventArgs e)
         {
+
+            flagStart = false;
             Figures = rdB_Positions.line;
             tmpShape = null;
             Refresh();
@@ -118,6 +124,8 @@ namespace studPiant_VS2008
 
         private void rdButt_Circle_CheckedChanged(object sender, EventArgs e)
         {
+
+            flagStart = false;
             Figures = rdB_Positions.circle;
             tmpShape = null;
             Refresh();
@@ -242,6 +250,11 @@ namespace studPiant_VS2008
         {
             shapesList.ClearSelected();
             Refresh();
+        }
+
+        private void MainScreen_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
